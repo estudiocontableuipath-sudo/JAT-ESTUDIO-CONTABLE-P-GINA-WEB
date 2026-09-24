@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.querySelector("#faq-list").innerHTML = faqs.map(([q, a], i) => `<article class="faq-item${i === 0 ? " open" : ""}"><button class="faq-question" type="button" aria-expanded="${i === 0}"><span>${q}</span><i data-lucide="plus"></i></button><div class="faq-answer"><p>${a}</p></div></article>`).join("");
+  document.querySelector("#faq-list").innerHTML = faqs.map(([q, a]) => `<article class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span>${q}</span><i data-lucide="plus"></i></button><div class="faq-answer"><p>${a}</p></div></article>`).join("");
 
   document.querySelectorAll(".faq-item").forEach(item => {
     const answer = item.querySelector(".faq-answer");
