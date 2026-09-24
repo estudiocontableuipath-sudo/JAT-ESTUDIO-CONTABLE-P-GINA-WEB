@@ -1,232 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JAT Estudio Contable</title>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Belleza&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="JAT Estudio Contable brinda asesoramiento contable, impositivo y soluciones digitales para emprendedores, profesionales y pymes en Mendoza.">
+  <title>JAT Estudio Contable | Contabilidad, impuestos y soluciones digitales</title>
+  <meta name="theme-color" content="#0b0d0c">
+  <link rel="icon" href="assets/jat-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260922-2">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="script.js?v=20260922" defer></script>
 </head>
 <body>
-
-  <!-- Header -->
-  <header id="header">
-    <div class="logo">
-      <h1>JAT</h1>
-      <span>ESTUDIO CONTABLE</span>
-      <span>EMILIANO TALQUENCA</span>
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#work">Mi Manera de Trabajar</a></li>
-        <li><a href="#faq">Preguntas Frecuentes</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#inicio" aria-label="JAT Estudio Contable, ir al inicio">
+      <img src="assets/jat-logo.png" alt="JAT Estudio Contable">
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#faq">FAQ</a>
     </nav>
-    <div class="hamburger">&#9776;</div>
+    <a class="header-cta" href="#contacto">Contactar <i data-lucide="arrow-up-right"></i></a>
+    <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <i data-lucide="menu"></i>
+    </button>
+    <div class="mobile-nav" aria-hidden="true">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="#contacto">Contacto</a>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Excelencia y Compromiso Profesional</h1>
-      <p>Soluciones a medida para llevar tu proyecto al siguiente nivel.</p>
-      <div class="hero-buttons">
-        <a href="#services" class="btn-solid">Mis Servicios</a>
-        <a href="#contact" class="btn-outline">Contactar</a>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/jat-cinematic-office.png">
+          <source src="assets/jat-accounting-hero-v2.mp4" type="video/mp4">
+        </video>
+        <img src="assets/jat-cinematic-office.png" alt="">
       </div>
-      <div class="scroll-down">&#x2193;</div>
+      <div class="hero-shade"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-light" aria-hidden="true"></div>
+      <div class="hero-content wrap">
+        <div class="hero-kicker">
+          <p class="eyebrow light"><span></span> Asesoramiento profesional</p>
+          <div class="hero-location"><i data-lucide="map-pin"></i><p><span>Atención presencial</span><strong>San Martín, Mendoza</strong></p></div>
+        </div>
+        <h1><span class="hero-wordmark">JAT</span><span class="hero-name">Estudio Contable</span></h1>
+        <div class="hero-bottom">
+          <p>Poné tu negocio en orden y hacelo crecer <em>sin complicaciones.</em></p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contacto">Hablemos <i data-lucide="arrow-right"></i></a>
+            <a class="button ghost" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-glass" aria-hidden="true">
+        <strong>Contabilidad +<br>Tecnología aplicada</strong>
+        <small>Información clara para decidir mejor</small>
+      </div>
+      <a class="hero-scroll" href="#presentacion" aria-label="Descubrir más"><span></span> Descubrir</a>
+    </section>
+
+    <div class="service-ribbon" aria-label="Áreas de servicio">
+      <div><span>Impuestos y Monotributo</span><i></i><span>Contabilidad</span><i></i><span>Asesoramiento para Negocios</span><i></i><span>Certificaciones y Proyecciones</span><i></i><span>Laboral y Societario</span><i></i><span>Soluciones Digitales a Medida</span><i></i><span>Desarrollo Web</span><i></i></div>
     </div>
-  </section>
 
-  <!-- Sobre mí -->
-  <section id="about" class="fade-in">
-    <h2>Sobre mí</h2>
-    <div class="about-container">
-      <div class="about-image">
-        <img src="https://via.placeholder.com/400x400" alt="Emiliano Talquenca">
-      </div>
-      <div class="about-text">
-        <p>Soy Emiliano, Contador Público Nacional y Licenciado en Administración. Mi objetivo es acompañar a emprendedores, profesionales y pymes a organizar su negocio, cumplir con sus obligaciones fiscales y crecer de manera ordenada. Te ayudo a simplificar la gestión de tu negocio para que puedas enfocarte en lo que realmente importa.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Servicios -->
-  <section id="services" class="fade-in">
-    <h2>Mis Servicios</h2>
-    <p>Soluciones claras para potenciar tu negocio.</p>
-    <div class="services-grid">
-
-      <div class="service-card">
-        <div class="icon">💰</div>
-        <h3>Impuestos y Monotributo</h3>
-        <p>Gestión completa para que cumplas con todas tus obligaciones fiscales sin estrés.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">🗂️</div>
-        <h3>Manifestación de bienes y certificación de ingresos</h3>
-        <p>Validamos tus activos e ingresos para trámites y presentaciones.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">📈</div>
-        <h3>Proyecciones Financieras</h3>
-        <p>Analizamos escenarios futuros para una mejor toma de decisiones.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">🏦</div>
-        <h3>Gestión de Préstamos Personales</h3>
-        <p>Te asesoramos y acompañamos en la gestión de préstamos personales para tus proyectos.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">📝</div>
-        <h3>Desarrollo de Plan de Negocio</h3>
-        <p>Creamos un plan de negocio sólido y a medida para la estructura de tu empresa.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">⚙️</div>
-        <h3>Soluciones a Medida</h3>
-        <p>Desarrollamos soluciones especialmente adaptadas a tus necesidades.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">🌟</div>
-        <h3>Mucho Más</h3>
-        <p>Ofrecemos servicios adicionales para cubrir cualquier necesidad contable y administrativa.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Mi Manera de Trabajar -->
-  <section id="work" class="fade-in">
-    <h2>Mi Manera de Trabajar</h2>
-    <div class="work-grid">
-      <div class="work-card">
-        <div class="icon">&#128101;</div>
-        <h3>Cercanía</h3>
-        <p>Trabajo cercano para entender tus necesidades.</p>
-      </div>
-      <div class="work-card">
-        <div class="icon">&#128172;</div>
-        <h3>Comunicación Clara</h3>
-        <p>Explico todo de manera sencilla y directa.</p>
-      </div>
-      <div class="work-card">
-        <div class="icon">&#128295;</div>
-        <h3>Soluciones Adaptadas</h3>
-        <p>Cada cliente recibe soluciones personalizadas.</p>
-      </div>
-      <div class="work-card">
-        <div class="icon">&#128640;</div>
-        <h3>Acompañamiento Constante</h3>
-        <p>Estoy presente en todo el proceso de tu proyecto.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Preguntas Frecuentes -->
-  <section id="faq" class="fade-in">
-    <h2>Preguntas Frecuentes</h2>
-    <div class="faq-container">
-      <div class="faq-item">
-        <button class="faq-question">¿Qué servicios contables ofrecen para emprendedores?</button>
-        <div class="faq-answer">
-          <p>Ofrecemos un paquete completo para emprendedores que incluye inscripción en monotributo, facturación, declaraciones juradas, y asesoramiento inicial para que tu negocio despegue con bases sólidas.</p>
+    <section class="intro section-light" id="presentacion">
+      <div class="wrap intro-grid">
+        <p class="eyebrow"><span></span> Una gestión más clara</p>
+        <div>
+          <h2>Orden en los números.<br><em>Claridad</em> para decidir.</h2>
+          <p class="lead">Ayudamos a emprendedores, profesionales y pymes a organizar sus números, cumplir con sus obligaciones fiscales y concentrarse en lo que realmente importa: crecer.</p>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question">¿Cómo me ayudan a organizar mis finanzas?</button>
-        <div class="faq-answer">
-          <p>A través de un diagnóstico inicial, identificamos tus necesidades y te proponemos herramientas sencillas y personalizadas para llevar un control de tus ingresos y gastos. Además, te acompañamos para que entiendas la salud financiera de tu proyecto.</p>
+      <div class="wrap pain-heading"><span>¿Te pasa algo de esto?</span><i></i></div>
+      <div class="wrap pain-grid">
+        <article><strong>01</strong><p>No saber si estás pagando de más en impuestos.</p></article>
+        <article><strong>02</strong><p>Sentir desorden en los papeles de tu negocio.</p></article>
+        <article><strong>03</strong><p>No saber exactamente cuánto ganás por mes.</p></article>
+        <article><strong>04</strong><p>Dificultad para seguir vencimientos o cobranzas.</p></article>
+      </div>
+      <div class="wrap answer-line"><i data-lucide="check"></i><p>Nos ocupamos de ordenar todo eso.</p></div>
+    </section>
+
+    <section class="services" id="servicios">
+      <canvas class="services-particles" id="services-particles" aria-hidden="true"></canvas>
+      <div class="wrap">
+        <div class="section-heading inverse">
+          <div><p class="eyebrow light"><span></span> Servicios profesionales</p><h2>Respaldo para cada etapa de <em>tu negocio.</em></h2></div>
+          <p>Soluciones contables, impositivas y de gestión pensadas para que tengas información clara, cumplas en tiempo y puedas avanzar con seguridad.</p>
+        </div>
+        <div class="service-list" id="service-list"></div>
+        <div class="digital-heading">
+          <p class="eyebrow light"><span></span> Servicios de valor agregado</p>
+          <h3>Contabilidad y tecnología, <em>trabajando juntas.</em></h3>
+        </div>
+        <div class="premium-services" id="premium-services"></div>
+      </div>
+    </section>
+
+    <section class="method section-light">
+      <div class="wrap method-grid">
+        <div class="method-title">
+          <p class="eyebrow"><span></span> Cómo trabajamos</p>
+          <h2>Un proceso simple.<br>Un criterio <em>profesional.</em></h2>
+          <p>Transformamos información dispersa en un plan de trabajo concreto, con acompañamiento y datos que se entienden.</p>
+        </div>
+        <ol class="steps">
+          <li><span>01</span><div><h3>Análisis de la situación</h3><p>Entendemos dónde estás parado hoy.</p></div></li>
+          <li><span>02</span><div><h3>Definición de un plan</h3><p>Armamos una hoja de ruta a tu medida.</p></div></li>
+          <li><span>03</span><div><h3>Acompañamiento</h3><p>Estamos con vos en el día a día.</p></div></li>
+          <li><span>04</span><div><h3>Información clara</h3><p>Datos precisos para que decidas mejor.</p></div></li>
+        </ol>
+      </div>
+      <div class="wrap outcomes">
+        <p class="eyebrow"><span></span> Resultados</p>
+        <div class="outcome-grid">
+          <p>Más control sobre tu dinero</p><p>Reducción de errores administrativos</p><p>Mejor toma de decisiones con datos reales</p><p>Tranquilidad impositiva frente a ARCA</p>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question">¿Tengo que llevarles los papeles a la oficina?</button>
-        <div class="faq-answer">
-          <p>No es necesario. Trabajamos de forma 100% digital. Podés enviarnos toda tu documentación por email o WhatsApp, y gestionamos todo de manera remota para tu comodidad.</p>
+    </section>
+
+    <section class="difference">
+      <div class="difference-photo">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/jat-cinematic-office.png">
+          <source src="assets/jat-workspace-detail-v2.mp4" type="video/mp4">
+        </video>
+        <div class="video-caption"><span>Contabilidad</span><i></i><span>Tecnología aplicada</span></div>
+      </div>
+      <div class="difference-content">
+        <p class="eyebrow light"><span></span> Nuestro diferencial</p>
+        <h2>Contabilidad +<br><em>tecnología aplicada.</em></h2>
+        <div class="difference-list">
+          <div><i data-lucide="scan-line"></i><p><strong>Información clara</strong><span>Datos al día y fáciles de entender.</span></p></div>
+          <div><i data-lucide="blocks"></i><p><strong>Orden</strong><span>Administración organizada sin vueltas.</span></p></div>
+          <div><i data-lucide="workflow"></i><p><strong>Herramientas digitales</strong><span>Soluciones simples que te ahorran tiempo.</span></p></div>
+          <div><i data-lucide="message-circle"></i><p><strong>Sin complejidad</strong><span>Hablamos tu mismo idioma, sin tecnicismos.</span></p></div>
         </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question">¿Qué costo tienen sus servicios?</button>
-        <div class="faq-answer">
-          <p>Nuestros honorarios se adaptan a la medida de cada cliente. Tras una primera reunión sin cargo, te preparamos un presupuesto personalizado según el tipo de servicio y la complejidad de tu negocio.</p>
+    </section>
+
+    <section class="about section-light" id="nosotros">
+      <div class="wrap about-top">
+        <p class="eyebrow"><span></span> Sobre nosotros</p>
+        <div>
+          <h2>Rigor profesional.<br><em>Cercanía real.</em></h2>
+          <p class="lead">Somos un estudio especializado en contabilidad, asesoramiento fiscal y automatización de procesos administrativos para emprendedores, profesionales y pymes.</p>
+          <p>Nuestro objetivo es simplificar tu gestión, reducir errores y convertir la administración en una ventaja para tu negocio.</p>
+          <p class="signature">Fundado por el Contador y Lic. en Administración Emiliano Talquenca</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contact" class="fade-in">
-    <h2>Hablemos</h2>
-    <p>Podés enviar un mensaje directo por WhatsApp o ver mis datos de contacto:</p>
-    
-    <div class="contact-cards">
-
-      <div class="contact-card">
-        <div class="icon">
-          <svg width="40" height="40" fill="#B89B74" viewBox="0 0 24 24">
-            <path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13 20 4.01V4H4zm0 2.236V20h16V6.236l-8 7.764-8-7.764z"/>
-          </svg>
-        </div>
-        <h3>Email</h3>
-        <p>estudiocontable.sm18@gmail.com</p>
+      <div class="wrap approach-heading"><h2 class="eyebrow"><span></span> Nuestro enfoque</h2></div>
+      <div class="wrap principles">
+        <article><span>01</span><h3>Soluciones prácticas y tecnológicas</h3><p>Organizar tus números nunca fue tan sencillo.</p></article>
+        <article><span>02</span><h3>Acompañamiento cercano</h3><p>Estamos con vos en cada etapa de tu negocio.</p></article>
+        <article><span>03</span><h3>Resultados medibles</h3><p>Más control sobre tu dinero y decisiones basadas en datos reales.</p></article>
       </div>
-
-      <div class="contact-card">
-        <div class="icon">
-          <svg width="40" height="40" fill="#25D366" viewBox="0 0 24 24">
-            <path d="M12.04 2C6.48 2 2 6.48 2 12c0 1.99.52 3.85 1.42 5.44L2 22l4.74-1.4C8.06 21.47 10 22 12 22c5.52 0 10-4.48 10-10S17.56 2 12.04 2zm5.93 14.44c-.26.72-1.52 1.36-2.11 1.44-.55.07-1.24.1-4.04-1.4-3.21-1.68-5.27-4.74-5.42-4.95-.15-.21-1.21-1.54-1.21-2.94s.72-2.08 1-2.36c.26-.26.57-.33.76-.33.19 0 .38 0 .55.01.18.01.42-.07.66.5.24.57.8 1.95.87 2.1.07.15.11.32.02.52-.09.21-.13.32-.25.5-.12.18-.25.38-.36.51-.12.13-.24.28-.11.55.13.26.58 1.05 1.25 1.7.86.84 1.57 1.1 1.83 1.22.26.12.42.1.58-.06.15-.15.64-.74.8-.99.16-.25.32-.2.55-.12.23.08 1.45.68 1.7.8.25.12.41.18.47.28.06.09.06.53-.2 1.25z"/>
-          </svg>
-        </div>
-        <h3>WhatsApp</h3>
-        <p>+54 9 263 494-3153</p>
-        <a href="https://wa.me/5492634943153?text=Hola%20quiero%20agendar%20una%20consulta%20con%20JAT%20Estudio%20Contable" 
-           target="_blank" class="btn-contact">Iniciar Chat</a>
+      <div class="wrap mission-grid">
+        <article><p class="eyebrow"><span></span> Misión</p><blockquote>“Transformar la gestión administrativa en una ventaja competitiva mediante innovación y rigor profesional.”</blockquote></article>
+        <article><p class="eyebrow"><span></span> Visión</p><blockquote>“Ser el aliado estratégico que impulsa el crecimiento de pymes y profesionales en la región.”</blockquote></article>
       </div>
-
-      <div class="contact-card">
-        <div class="icon">
-          <svg width="40" height="40" fill="#B89B74" viewBox="0 0 24 24">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
-          </svg>
-        </div>
-        <h3>Ubicación</h3>
-        <p>San Martín, Mendoza, Argentina</p>
+      <div class="wrap values">
+        <p class="eyebrow"><span></span> Nuestros valores</p>
+        <div class="value-row"><span>Excelencia profesional</span><span>Enfoque en resultados</span><span>Innovación constante</span><span>Relaciones duraderas</span></div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section class="faq" id="faq">
+      <div class="wrap faq-grid">
+        <div class="faq-title"><p class="eyebrow light"><span></span> FAQ</p><h2>Preguntas <em>frecuentes.</em></h2><p>Información directa para que sepas cómo trabajamos y qué podés esperar.</p></div>
+        <div class="accordion" id="faq-list"></div>
+      </div>
+    </section>
 
-  <!-- Footer -->
+    <section class="contact section-light" id="contacto">
+      <div class="wrap contact-heading">
+        <p class="eyebrow"><span></span> Contacto</p>
+        <h2>Hablemos de <em>tu negocio.</em></h2>
+        <p>Completá el formulario indicando tus necesidades y te enviaremos una propuesta detallada adaptada a tu negocio.</p>
+      </div>
+      <div class="wrap contact-grid">
+        <form class="contact-form" id="contact-form">
+          <label><span>Nombre</span><input type="text" name="nombre" autocomplete="name" required></label>
+          <label><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+          <label><span>Servicio</span><select name="servicio" id="service-select" required><option value="" selected disabled>Seleccioná una opción</option><option value="Presupuesto Personalizado">Solicitar Presupuesto Personalizado</option></select></label>
+          <label><span>Mensaje <small>Opcional</small></span><textarea name="mensaje" rows="4"></textarea></label>
+          <button class="button primary dark-text" type="submit">Enviar por WhatsApp <i data-lucide="arrow-up-right"></i></button>
+        </form>
+        <div class="contact-info">
+          <a href="mailto:jatestudiocontable18@gmail.com"><span class="contact-icon"><i data-lucide="mail"></i></span><span class="contact-copy"><span>Email</span><strong>jatestudiocontable18@gmail.com</strong></span><i data-lucide="arrow-up-right"></i></a>
+          <a href="https://wa.me/542634512677?text=Hola%20quiero%20comunicarme%20con%20JAT%20Estudio%20Contable" target="_blank" rel="noopener"><span class="contact-icon"><i data-lucide="message-circle"></i></span><span class="contact-copy"><span>WhatsApp</span><strong>+54 263 451 2677</strong></span><i data-lucide="arrow-up-right"></i></a>
+          <a href="https://www.instagram.com/jatestudiocontable18?igsh=MWU4bTlsMzN3NGtrcg==" target="_blank" rel="noopener"><span class="contact-icon"><img src="assets/instagram.png" width="34" height="28" alt="Instagram"></span><span class="contact-copy"><span>Instagram</span><strong>@jatestudiocontable18</strong></span><i data-lucide="arrow-up-right"></i></a>
+          <div class="address"><span class="contact-icon"><i data-lucide="map-pin"></i></span><span class="contact-copy"><span>Ubicación</span><strong>Pasco 29, San Martín, Mendoza</strong></span></div>
+          <div class="map"><iframe src="https://www.google.com/maps?q=Pasco+29,+San+Martín,+Mendoza,+Argentina&output=embed" title="Ubicación de JAT Estudio Contable" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+      </div>
+    </section>
+    <section class="cinema-finale" aria-labelledby="finale-title">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/jat-cinematic-office.png" aria-hidden="true"><source src="assets/jat-accounting-hero-v2.mp4" type="video/mp4"></video>
+      <div class="finale-shade" aria-hidden="true"></div>
+      <div class="wrap finale-content">
+        <p class="eyebrow light"><span></span> JAT Estudio Contable</p>
+        <h2 id="finale-title">Rigor profesional.<br><em>Cercanía real.</em></h2>
+        <p>Contabilidad, impuestos y tecnología aplicada para una gestión más clara.</p>
+        <a class="button primary" href="#contacto">Iniciar una consulta <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <h3>JAT</h3>
-        <span>Estudio Contable</span>
-      </div>
-      <div class="footer-links">
-        <a href="#about">Sobre mí</a>
-        <a href="#services">Servicios</a>
-        <a href="#work">Mi Manera de Trabajar</a>
-        <a href="#faq">Preguntas Frecuentes</a>
-        <a href="#contact">Contacto</a>
-      </div>
-      <div class="footer-contact">
-        <p>Email: estudiocontable.sm18@gmail.com</p>
-        <p>WhatsApp: +54 9 263 494-3153</p>
-      </div>
+    <div class="wrap footer-top">
+      <a class="footer-brand" href="#inicio"><img src="assets/jat-logo.png" alt="JAT Estudio Contable"></a>
+      <p>Contabilidad, impuestos y tecnología aplicada para una gestión más clara.</p>
+      <a class="button outline" href="#contacto">Iniciar una consulta <i data-lucide="arrow-right"></i></a>
     </div>
-    <p class="copyright">© <span id="year"></span> JAT Estudio Contable. Todos los derechos reservados.</p>
+    <div class="wrap footer-bottom">
+      <p>© 2026 JAT Estudio Contable.</p>
+      <button type="button" id="terms-open">Términos y privacidad</button>
+      <div><a href="https://www.instagram.com/jatestudiocontable18?igsh=MWU4bTlsMzN3NGtrcg==" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/542634512677" target="_blank" rel="noopener">WhatsApp</a></div>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <button class="chat-trigger" type="button" aria-label="Abrir JatBot" aria-expanded="false"><span class="bot-avatar bot-avatar-small"><img src="assets/jatbot-assistant.png" alt=""><b></b></span><span class="chat-label">JatBot</span></button>
+  <aside class="chat-panel" aria-hidden="true">
+    <div class="chat-head"><div><span class="bot-avatar"><img src="assets/jatbot-assistant.png" alt="JatBot, asistente virtual"><b></b></span><p><strong>JatBot</strong><span>Asistente virtual · respuestas rápidas</span></p></div><button type="button" class="chat-close" aria-label="Cerrar"><i data-lucide="x"></i></button></div>
+    <div class="chat-history" id="chat-history"><div class="bot-message">¡Hola! Soy JatBot. Puedo orientarte sobre los servicios, la modalidad de atención y las formas de contacto de JAT Estudio Contable. Elegí una opción para comenzar.</div></div>
+    <div class="chat-options" id="chat-options"></div>
+  </aside>
+
+  <div class="modal" id="service-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-backdrop" type="button" data-close-modal aria-label="Cerrar"></button>
+    <div class="modal-card"><button class="modal-close" type="button" data-close-modal aria-label="Cerrar"><i data-lucide="x"></i></button><p class="eyebrow"><span></span> Servicio profesional</p><h2 id="modal-title"></h2><p class="modal-subtitle" id="modal-subtitle"></p><p id="modal-description"></p><h3>¿Qué incluye?</h3><ul id="modal-includes"></ul><div class="modal-benefit"><span>Beneficio</span><p id="modal-benefit"></p></div><a class="button primary dark-text modal-contact" href="#contacto">Consultar por este servicio <i data-lucide="arrow-right"></i></a></div>
+  </div>
+
+  <div class="modal" id="terms-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="terms-title">
+    <button class="modal-backdrop" type="button" data-close-terms aria-label="Cerrar"></button>
+    <div class="modal-card terms-card"><button class="modal-close" type="button" data-close-terms aria-label="Cerrar"><i data-lucide="x"></i></button><p class="eyebrow"><span></span> Información legal</p><h2 id="terms-title">Términos y privacidad</h2><p>En JAT Estudio Contable, la confidencialidad de su información es nuestra prioridad. Todos los datos compartidos a través de este sitio web o en nuestras consultas son tratados con el más estricto rigor profesional.</p><p>Utilizamos su información únicamente para brindar los servicios de asesoramiento solicitados y para mejorar nuestra comunicación con usted.</p><p>Al utilizar nuestros servicios, usted acepta el tratamiento de sus datos bajo estas premisas de seguridad y confianza.</p></div>
+  </div>
 </body>
 </html>
