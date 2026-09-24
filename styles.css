@@ -212,6 +212,15 @@ em { color: var(--gold); font-family: var(--serif); font-weight: 500; }
 .faq-item.open .faq-question svg { transform: rotate(45deg); }
 .faq-answer { max-height: 0; overflow: hidden; transition: max-height .4s cubic-bezier(.2,.7,.2,1); }
 .faq-answer p { margin: 0; padding: 0 55px 32px 0; color: rgba(255,255,255,.58); font-size: 16px; line-height: 1.75; }
+@media (min-width: 901px) {
+  .faq-grid { width: min(920px, calc(100% - 64px)); gap: 48px; }
+  .faq-title { max-width: 760px; margin-inline: auto; text-align: center; }
+  .faq-title .eyebrow { justify-content: center; }
+  .faq-title > p:last-child { margin-inline: auto; }
+  .accordion { padding-inline: 30px; border-right: 1px solid var(--line-dark); border-left: 1px solid var(--line-dark); background: rgba(255,255,255,.018); }
+  .faq-question { padding: 25px 4px; }
+  .faq-answer p { padding: 0 48px 28px 4px; }
+}
 .contact { padding: 150px 0 0; background: var(--ivory); }
 .contact::after { content: ""; position: absolute; top: 0; right: 5%; width: 1px; height: 210px; background: linear-gradient(var(--gold), transparent); opacity: .45; }
 .contact-heading { display: grid; grid-template-columns: .56fr 1.25fr .75fr; gap: 60px; align-items: end; }
