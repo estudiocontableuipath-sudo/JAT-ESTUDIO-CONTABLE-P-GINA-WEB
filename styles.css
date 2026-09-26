@@ -264,7 +264,7 @@ footer::before { content: "JAT"; position: absolute; right: -30px; bottom: -95px
 .footer-bottom div { display: flex; align-items: center; justify-content: center; gap: 24px; }
 .footer-socials a { display: grid; width: 30px; height: 30px; place-items: center; color: #fff; }
 .footer-socials svg { width: 22px; height: 22px; fill: currentColor; stroke: none; }
-.footer-socials a:first-child svg { fill: none; stroke: currentColor; stroke-width: 1.8; }
+.footer-socials .outline-icon { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .footer-bottom a:hover, .footer-bottom button:hover { color: var(--gold-bright); }
 .chat-trigger { position: fixed; right: 25px; bottom: 25px; z-index: 70; min-width: 58px; height: 58px; padding: 0 20px; border: 1px solid rgba(255,255,255,.22); background: rgba(17,19,15,.82); color: white; display: flex; align-items: center; justify-content: center; gap: 9px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; box-shadow: 0 18px 60px rgba(0,0,0,.35); backdrop-filter: blur(18px); transition: .3s; }
 .chat-trigger::before { content: ""; position: absolute; inset: -1px; z-index: -1; border: 1px solid rgba(198,167,96,.4); transform: scale(1.12); opacity: 0; transition: .3s; }
@@ -500,7 +500,7 @@ footer::before { content: "JAT"; position: absolute; right: -30px; bottom: -95px
 }
 @media (max-width: 560px) {
   .hero { min-height: 650px; height: 100svh; max-height: 780px; }
-  .hero-content { padding-bottom: 66px; }
+  .hero-content { padding-bottom: 104px; }
   .hero h1 { width: 100%; }
   .hero-wordmark { font-size: 68px; }
   .hero-name { font-size: 32px; line-height: 1.2; max-width: 330px; }
